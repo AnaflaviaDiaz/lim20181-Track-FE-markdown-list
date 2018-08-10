@@ -1,0 +1,25 @@
+{
+  "name": "md-links",
+  "version": "1.0.0",
+  "description": "links markdown",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnaflaviaDiaz/lim20181-Track-FE-markdown-list.git"
+  },
+  "keywords": [
+    "markdown"
+  ],
+  "author": "Anaflavia Diaz Martel <anaflaviadiazmartel5a@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnaflaviaDiaz/lim20181-Track-FE-markdown-list/issues"
+  },
+  "homepage": "https://github.com/AnaflaviaDiaz/lim20181-Track-FE-markdown-list#readme",
+  "devDependencies": {
+    "eslint": "^5.3.0"
+  }
+}
