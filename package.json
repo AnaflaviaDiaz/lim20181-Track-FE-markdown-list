@@ -4,7 +4,7 @@
   "description": "links markdown",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/AnaflaviaDiaz/lim20181-Track-FE-markdown-list#readme",
   "devDependencies": {
-    "eslint": "^5.3.0"
+    "eslint": "^5.3.0",
+    "jest": "^23.5.0"
   },
   "dependencies": {}
 }
