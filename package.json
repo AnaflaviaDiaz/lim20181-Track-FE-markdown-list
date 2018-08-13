@@ -4,7 +4,8 @@
   "description": "links markdown",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "md-links": "node index.js"
   },
   "repository": {
     "type": "git",
