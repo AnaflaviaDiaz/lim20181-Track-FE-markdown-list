@@ -4,8 +4,10 @@
   "description": "links markdown",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "md-links": "node index.js"
+    "test": "jest"
+  },
+  "bin": {
+    "md-links": "./index.js"
   },
   "repository": {
     "type": "git",
@@ -24,5 +26,8 @@
     "eslint": "^5.3.0",
     "jest": "^23.5.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "to-absolute-path": "^1.0.0"
+  }
 }
