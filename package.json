@@ -6,6 +6,9 @@
   "scripts": {
     "test": "jest"
   },
+  "bin": {
+    "md-links": "./index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AnaflaviaDiaz/lim20181-Track-FE-markdown-list.git"
@@ -24,7 +27,7 @@
     "jest": "^23.5.0"
   },
   "dependencies": {
-    "fs": "0.0.1-security",
+    "marked": "^0.4.0",
     "to-absolute-path": "^1.0.0"
   }
 }
