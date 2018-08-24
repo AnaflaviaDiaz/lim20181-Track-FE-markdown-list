@@ -1,13 +1,13 @@
 {
   "name": "@anaflaviadiazmartel/md-links",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "description": "links markdown",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "bin": {
-    "md-links": "./index.js"
+    "md-links": "./cli.js"
   },
   "repository": {
     "type": "git",
@@ -23,11 +23,14 @@
   },
   "homepage": "https://github.com/AnaflaviaDiaz/lim20181-Track-FE-markdown-list#readme",
   "devDependencies": {
-    "eslint": "^5.3.0",
-    "jest": "^23.5.0"
+    "eslint": "^5.4.0",
+    "jest": "^23.5.0",
+    "ndb": "^1.0.24"
   },
   "dependencies": {
+    "async": "^2.6.1",
     "marked": "^0.4.0",
-    "to-absolute-path": "^1.0.0"
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
   }
 }
