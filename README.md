@@ -7,15 +7,14 @@ Los archivos markdown son renderizados con Marked que los convierte en formato H
 ## Instalación
 
 `npm i --save-dev @anaflaviadiazmartel/md-links`
-`npm link`
 
 ## Versión
 
-0.1.4
+0.1.5
 
 ## Uso en CLI
 
-`$ md-links <../../../route> <options>`
+`$ md-links <route> <options>`
 ----------------------
 `<route>` es la ruta del archivo o carpeta a evaluar de tu proyecto.
 
@@ -29,30 +28,30 @@ Los archivos markdown son renderizados con Marked que los convierte en formato H
 
 ## Ejemplos - Demo
 
-Instalar la librería en el proyecto `npm i --save-dev @anaflaviadiazmartel/md-links` y `npm link`
-[![npmi](https://imgur.com/vZsyeYX.png)](https://imgur.com/vZsyeYX.png)
+Instalar la librería en el proyecto `npm i --save-dev @anaflaviadiazmartel/md-links`
+[![npmi](https://imgur.com/VG3t7JN.png)](https://imgur.com/VG3t7JN.png)
+<!-- desplegar node-modules para ver el package -->
+[![files](https://imgur.com/231hdlN.png)](https://imgur.com/231hdlN.png)
 
-La ruta por defecto es el de la librería, por lo que se debe concatenar antes de la ruta con (`../../../`), de esta manera sale de **node_modules** y recién va concatenado con la ruta relativa de la carpeta o archivo de tu proyecto para evaluar los links en archivos Markdown.
+Escribe en CLI el comando `md-links <ruta del archivo o carpeta de tu proyecto>`, en consola mostrará un arreglo de objetos que tendrán el link, el texto y la ruta del archivo markdown encontrado.
 
-Cuando pongamos el comando `md-links <../../../ruta del archivo o carpeta>` obtendremos un arreglo de objetos que tendrán el link, el texto y la ruta del archivo markdown encontrado.
-
-[![npmi](https://imgur.com/mqKCSPV.png)](https://imgur.com/mqKCSPV.png)
+[![route file](https://imgur.com/GgvaLVT.png)](https://imgur.com/GgvaLVT.png)
 
 Para determinar cuántos links hay en total de la ruta escrita en CLI y los links únicos se escribe en CLI:
-`md-links <../../../ruta del archivo o carpeta> --stats`
+`md-links <ruta del archivo o carpeta> --stats`
 
-[![npmi](https://imgur.com/PV7XpUM.png)](https://imgur.com/PV7XpUM.png)
+[![stats](https://imgur.com/kTatZYH.png)](https://imgur.com/kTatZYH.png)
 
-Para determinar cuántos links hay en total de la ruta escrita en CLI,los links únicos y el número de links que como respuesta a la consulta HTTP retornan una falla se escribe en CLI:
-`md-links <../../../ruta del archivo o carpeta> --stats --validate`
+Para determinar cuántos links hay en total de la ruta escrita en CLI, los links únicos y el número de links que como respuesta a la consulta HTTP retornan una falla se escribe en CLI:
+`md-links <ruta del archivo o carpeta> --stats --validate`
 
-[![npmi](https://imgur.com/PLosLnQ.png)](https://imgur.com/PLosLnQ.png)
+[![statsvalidate](https://imgur.com/VTCxP5o.png)](https://imgur.com/VTCxP5o.png)
 
 Para hacer las consultas HTTP de nuestros links en los archivos markdown se escribe en CLI:
-`md-links <../../../ruta del archivo o carpeta> --validate`
+`md-links <ruta del archivo o carpeta> --validate`
 
-[![npmi](https://imgur.com/YN7LCry.png)](https://imgur.com/YN7LCry.png)*
+[![npmi](https://imgur.com/AbUiaVg.png)](https://imgur.com/AbUiaVg.png)
 
-El resultado de la consulta se muestra en la propiedad *status*.
+El resultado de la consulta HTTP se muestra en la propiedad *status*.
 
 ## [Backlog de la implementación de la librería @anaflaviadiazmartel/md-links](https://github.com/AnaflaviaDiaz/lim20181-Track-FE-markdown-list/projects/1)
