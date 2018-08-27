@@ -42,3 +42,18 @@ it('mdLinks para --stats', (done) => {
 	});
 });
 
+it('mdLinks cuando no mande ninguna opción', (done) => {
+	const options = {
+		stats: false,
+		validate: false
+	};
+	mdLinks(path.join(process.cwd(), './test/prueba/hola/hola.md'), options).then((resultStats) => {
+		expect(resultStats).toEqual([{ href: 'https://es.wikipedia.org/wiki/Markdown',
+		text: 'Markdown1',
+		file: 'C:\\Users\\Anaflavia\\Desktop\\FAFU_PROY_LABORATORIA\\markdown\\lim20181-Track-FE-markdown-list\\test\\prueba\\hola\\hola.md' },
+	  { href: 'http://www.google.com',
+		text: 'Markdown0',
+		file: 'C:\\Users\\Anaflavia\\Desktop\\FAFU_PROY_LABORATORIA\\markdown\\lim20181-Track-FE-markdown-list\\test\\prueba\\hola\\hola.md'} ]);
+		done();
+	});
+});
