@@ -9,11 +9,11 @@ it('mdLinks para --validate', (done) => {
 	mdLinks(path.join(process.cwd(), './test/prueba/hola/hola.md'), options).then((resultValidate) => {
 		expect(resultValidate).toEqual([{ href: 'http://www.google.com',
 		text: 'Markdown0',
-		file: 'C:\\Users\\Anaflavia\\Desktop\\FAFU_PROY_LABORATORIA\\markdown\\important\\markdown-list\\test\\prueba\\hola\\hola.md',
+		file: 'C:\\Users\\Anaflavia\\Desktop\\FAFU_PROY_LABORATORIA\\markdown\\lim20181-Track-FE-markdown-list\\test\\prueba\\hola\\hola.md',
 		status: '200 OK' },
 	  { href: 'https://es.wikipedia.org/wiki/Markdown',
 		text: 'Markdown1',
-		file: 'C:\\Users\\Anaflavia\\Desktop\\FAFU_PROY_LABORATORIA\\markdown\\important\\markdown-list\\test\\prueba\\hola\\hola.md',
+		file: 'C:\\Users\\Anaflavia\\Desktop\\FAFU_PROY_LABORATORIA\\markdown\\lim20181-Track-FE-markdown-list\\test\\prueba\\hola\\hola.md',
 		status: '200 OK' }]);
 		done();
 	});

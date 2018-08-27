@@ -4,9 +4,7 @@
 
 const path = require('path');
 const [, , ...args] = process.argv;
-const result = [];
 const mdLinks = require('./index.js');
-const resolvePath = require('./filedirectory.js');
 let route;
 const usage = () => {
 	console.log(`\n Uso: \n\n$ md-links <route> <options> \n\n<route> es la ruta del archivo o carpeta a evaluar \n<options> tendrán los valores de:
@@ -27,7 +25,9 @@ const options = {
 };
 
 if (args[1] === undefined && route) {
-	resolvePath(route, result).then(response => console.log(response));
+	options.stats = false;
+	options.validate = false;
+	mdLinks(route, options).then(response => console.log(response));
 } else if (args[1] === '--stats' && args[2] === '--validate' && route) {
 	options.stats = true;
 	options.validate = true;
