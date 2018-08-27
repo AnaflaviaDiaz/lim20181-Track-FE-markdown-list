@@ -3,7 +3,7 @@ const rp = require('request-promise');
 
 const requestLink = (arr) => {
 	let arrLinksFail = [];
-	const promise = new Promise((resolve, reject) => {
+	return new Promise((resolve, reject) => {
 		try {
 			if (typeof (arr[0]) === 'string') {
 				arr.map(content => {
@@ -30,7 +30,6 @@ const requestLink = (arr) => {
 			reject(error);
 		}
 	});
-	return promise;
 };
 
 module.exports = requestLink;

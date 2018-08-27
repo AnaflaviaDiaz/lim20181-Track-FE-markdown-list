@@ -3,7 +3,7 @@ const requestLinks = require('./http.js');
 
 const mdLinks = (path, options) => {
 	let links = [];
-	const promise = new Promise((resolve, reject) => {
+	return new Promise((resolve, reject) => {
 		resolvePath(path, links).then(result => {
 			try {
 				if (options.validate && options.stats) {
@@ -26,7 +26,6 @@ const mdLinks = (path, options) => {
 			}
 		});
 	});
-	return promise;
 };
 
 module.exports = mdLinks;

@@ -27,7 +27,7 @@ const directoryFile = (pathroute, accum) => {
 };
 
 const resolvePath = (route, result) => {
-	const promise = new Promise((resolve, reject) => {
+	return new Promise((resolve, reject) => {
 		try {
 			directoryFile(route, result);
 			resolve(result);
@@ -35,7 +35,6 @@ const resolvePath = (route, result) => {
 			reject(e);
 		}
 	});
-	return promise;
 };
 
 module.exports = resolvePath;
