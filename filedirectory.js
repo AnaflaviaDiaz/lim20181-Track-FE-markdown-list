@@ -3,11 +3,6 @@ const myMarked = require('marked');
 const fs = require('fs');
 const path = require('path');
 
-// const usage = () => {
-// 	console.log(`\n Uso: \n\n$ md-links <route> <options> \n\n<route> es la ruta del archivo o carpeta a evaluar \n<options> tendrán los valores de:
-// --stats, muestra cantidad de links y cantidad de links únicos \n--validate, muestra ruta de archivo, texto de referencia, link, estado de link \n--stats --validate, muestra cantidad de links, cantidad de links únicos y cantidad de links rotos`);
-// };
-
 const validateFile = (route, links) => {
 	const data = fs.readFileSync(route, 'utf8');
 	const renderer = new myMarked.Renderer();
